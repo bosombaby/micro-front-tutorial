@@ -1,0 +1,32 @@
+@import "./element-plus.scss";
+
+// 自定义css变量
+:root {
+  // 模块大小
+  --sider-bar-width: 180px;
+  --hide-sider-bar-width: 64px;
+  --siderbar-bg-color: #001529;
+  --nav-bar-height: 40px;
+  --tags-view-height: 40px;
+
+  // 处理动画时长
+  --sidebar-duration: 0.1s;
+  --mapping-color: #c1ffc1;
+  --inactive-color: #d73027;
+  --el-text-color-regular: #303133 !important;
+}
+
+// 路由切换动画
+.fade-transform-enter-active,
+.fade-transform-leave-active {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fade-transform-enter-from,
+.fade-transform-leave-to {
+  opacity: 0;
+}
+
+.app1 {
+  color: red;
+}
